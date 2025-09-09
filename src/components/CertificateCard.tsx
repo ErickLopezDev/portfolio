@@ -3,12 +3,12 @@ import { Eye } from "lucide-react"; // 👀 ícono
 import { type ICertificate } from "../types/portfolio";
 
 export const CertificateCard: React.FC<{ certificado: ICertificate }> = ({ certificado }) => (
-  <div className="max-w-70 relative bg-white dark:bg-neutral-900 rounded-2xl shadow-md overflow-hidden">
-    <div className="overflow-hidden relative">
+  <div className="relative bg-white dark:bg-neutral-900 rounded-2xl shadow-md overflow-hidden">
+    <div className="h-80 w-full overflow-hidden relative">
       <img
         src={certificado.imagen}
         alt={certificado.titulo}
-        className={`object-center w-full h-full transition-all ${
+        className={`object-cover w-full h-full transition-all ${
           certificado.obtenido ? "" : "grayscale opacity-70"
         }`}
       />

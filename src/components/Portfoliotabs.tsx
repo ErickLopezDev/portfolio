@@ -57,7 +57,7 @@ export default function PortfolioTabs() {
       )}
 
       {tab === "certs" && (
-        <div className="flex flex-wrap gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {certs.map((c) => (
             <CertificateCard key={c.id} certificado={c} />
           ))}
