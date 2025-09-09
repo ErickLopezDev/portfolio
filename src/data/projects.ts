@@ -1,11 +1,15 @@
 import { type IProject } from "../types/portfolio";
 
+import project1Img from "../assets/crellow.png";
+import project2Img from "../assets/csrs.png";
+import project3Img from "../assets/fitfat.png";
+
 export const projects: IProject[] = [
   {
     id: 1,
     titulo: "Project 1",
     descripcion: "An amazing project to showcase skills.",
-    imagen: "https://picsum.photos/600/400?random=1",
+    imagen: project1Img,
     tecnologias: ["React", "Node.js", "Tailwind"],
     rol: "Lead Developer",
     link: "#",
@@ -18,7 +22,7 @@ export const projects: IProject[] = [
     id: 2,
     titulo: "Project 2",
     descripcion: "Another cool project with modern stack.",
-    imagen: "https://picsum.photos/600/400?random=2",
+    imagen: project2Img,
     tecnologias: ["Next.js", "TypeScript", "Supabase"],
     rol: "Backend Developer",
     link: "#",
@@ -31,7 +35,7 @@ export const projects: IProject[] = [
     id: 3,
     titulo: "Project 3",
     descripcion: "Experimenting with backend and microservices.",
-    imagen: "https://picsum.photos/600/400?random=3",
+    imagen: project3Img,
     tecnologias: ["Go", "Docker", "Kubernetes"],
     rol: "DevOps Engineer",
     link: "#",
