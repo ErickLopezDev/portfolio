@@ -6,7 +6,6 @@ import { projects } from "../data/projects";
 import { certs } from "../data/certs";
 import { type IProject } from "../types/portfolio";
 import { ExperienceTimeline } from "./ExperienceTimeLine";
-import { div } from "framer-motion/client";
 
 export default function PortfolioTabs() {
   const [tab, setTab] = useState<"experience" | "projects" | "certs">("experience");
