@@ -6,6 +6,7 @@ import { projects } from "../data/projects";
 import { certs } from "../data/certs";
 import { type IProject } from "../types/portfolio";
 import { ExperienceTimeline } from "./ExperienceTimeLine";
+import { div } from "framer-motion/client";
 
 export default function PortfolioTabs() {
   const [tab, setTab] = useState<"experience" | "projects" | "certs">("experience");
@@ -18,7 +19,7 @@ export default function PortfolioTabs() {
         <div className="bg-gray-100 dark:bg-neutral-800 p-2 rounded-full inline-flex gap-2">
           <button
             onClick={() => setTab("experience")}
-            className={`px-4 py-2 rounded-full text-sm font-medium ${
+            className={`px-4 py-2 rounded-full text-sm font-medium cursor-pointer hover:bg-neutral-300 ${
               tab === "experience" ? "bg-black text-white" : "text-gray-700 dark:text-gray-300"
             }`}
           >
@@ -26,7 +27,7 @@ export default function PortfolioTabs() {
           </button>
           <button
             onClick={() => setTab("projects")}
-            className={`px-4 py-2 rounded-full text-sm font-medium ${
+            className={`px-4 py-2 rounded-full text-sm font-medium cursor-pointer hover:bg-neutral-300 ${
               tab === "projects" ? "bg-black text-white" : "text-gray-700 dark:text-gray-300"
             }`}
           >
@@ -34,7 +35,7 @@ export default function PortfolioTabs() {
           </button>
           <button
             onClick={() => setTab("certs")}
-            className={`px-4 py-2 rounded-full text-sm font-medium ${
+            className={`px-4 py-2 rounded-full text-sm font-medium cursor-pointer hover:bg-neutral-300 ${
               tab === "certs" ? "bg-black text-white" : "text-gray-700 dark:text-gray-300"
             }`}
           >
@@ -45,7 +46,9 @@ export default function PortfolioTabs() {
 
       {/* Content */}
       {tab === "experience" && (
-        <ExperienceTimeline/>
+        <div className="mx-auto w-fit">
+          <ExperienceTimeline/>
+        </div>
       )}
 
       {tab === "projects" && (
@@ -57,7 +60,7 @@ export default function PortfolioTabs() {
       )}
 
       {tab === "certs" && (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {certs.map((c) => (
             <CertificateCard key={c.id} certificado={c} />
           ))}

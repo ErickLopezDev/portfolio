@@ -4,7 +4,7 @@ import { type ICertificate } from "../types/portfolio";
 
 export const CertificateCard: React.FC<{ certificado: ICertificate }> = ({ certificado }) => (
   <div className="relative bg-white dark:bg-neutral-900 rounded-2xl shadow-md overflow-hidden">
-    <div className="h-80 w-full overflow-hidden relative">
+    <div className="h-60 w-full overflow-hidden relative">
       <img
         src={certificado.imagen}
         alt={certificado.titulo}

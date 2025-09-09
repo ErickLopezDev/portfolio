@@ -33,7 +33,7 @@ export default function Header(){
           </h1>
           <div className="flex flex-col sm:flex-row items-center gap-4">
             {/* Toggle estilo iPhone */}
-            <label className="relative inline-flex items-center cursor-pointer" aria-label="Toggle dark mode">
+            {/* <label className="relative inline-flex items-center cursor-pointer" aria-label="Toggle dark mode">
               <input
                 type="checkbox"
                 className="sr-only peer"
@@ -41,7 +41,7 @@ export default function Header(){
                 onChange={() => setDarkMode(!darkMode)}
               />
               <div className="w-11 h-6 bg-gray-300 rounded-full peer peer-checked:bg-green-200 dark:bg-gray-600 peer-focus:ring-2dark:peer-focus:ring-green-00 after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-full"></div>
-            </label>
+            </label> */}
             <div className="flex gap-4 text-xl">
               <a href="https://github.com/ErickLopezDev" target="_blank" rel="noopener noreferrer" className="hover:text-neutral-400">
                 <FaGithub />
