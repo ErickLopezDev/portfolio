@@ -6,6 +6,7 @@ const Portfolio = lazy(() => import("./components/Portfolio"));
 const Certs = lazy(() => import("./modules/certifications/Certs"));
 const Experiences = lazy(() => import("./modules/home/Experiences"));
 const Projects = lazy(() => import("./modules/projects/Projects"));
+const ProjectView = lazy(() => import("./modules/projects/ProjectView"));
 
 export const routes: RouteObject[] = [
   {
@@ -29,5 +30,9 @@ export const routes: RouteObject[] = [
         element: <Projects />,
       },
     ],
+  },
+  {
+    path: "/projects/:id",
+    element: <ProjectView />,
   },
 ];
