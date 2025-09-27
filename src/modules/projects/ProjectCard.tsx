@@ -1,4 +1,4 @@
-import { type IProject } from "../types/portfolio";
+import { type IProject } from "../../types/portfolio";
 import { useState } from "react";
 import { ProjectModal } from "./ProjectModal";
 import { ArrowRight } from "lucide-react";

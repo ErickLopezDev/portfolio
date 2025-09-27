@@ -1,14 +1,5 @@
-export interface ICertificate {
-  id: number;
-  titulo: string;
-  institucion: string;
-  fecha: string;
-  imagen: string;
-  obtenido: boolean;
-}
-
 export interface IProject {
-  id: number;
+  id: string;
   titulo: string;
   descripcion: string;
   imagen: string;
@@ -17,15 +8,5 @@ export interface IProject {
   link: string;
   longDescription: string;
   fechaInicio: string; // formato: YYYY-MM-DD
-  fechaFin: string;    // formato: YYYY-MM-DD
-}
-
-
-export interface IExperience {
-  id: number;
-  empresa: string;
-  puesto: string;
-  periodo: string;
-  descripcion: string;
-  highlights?: string[];
+  fechaFin: string; // formato: YYYY-MM-DD
 }

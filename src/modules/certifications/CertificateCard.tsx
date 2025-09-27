@@ -1,8 +1,10 @@
 import React from "react";
-import { Eye } from "lucide-react"; // 👀 ícono
-import { type ICertificate } from "../types/portfolio";
+import { Eye } from "lucide-react";
+import type { ICertificate } from "../../types";
 
-export const CertificateCard: React.FC<{ certificado: ICertificate }> = ({ certificado }) => (
+export const CertificateCard: React.FC<{ certificado: ICertificate }> = ({
+  certificado,
+}) => (
   <div className="relative bg-white dark:bg-neutral-900 rounded-2xl shadow-md overflow-hidden">
     <div className="h-60 w-full overflow-hidden relative">
       <img
@@ -23,7 +25,9 @@ export const CertificateCard: React.FC<{ certificado: ICertificate }> = ({ certi
 
     <div className="p-4">
       <h3 className="text-lg font-semibold">{certificado.titulo}</h3>
-      <p className="text-sm text-gray-500 dark:text-gray-400">{certificado.institucion}</p>
+      <p className="text-sm text-gray-500 dark:text-gray-400">
+        {certificado.institucion}
+      </p>
       <p className="text-xs text-gray-400">{certificado.fecha}</p>
     </div>
   </div>

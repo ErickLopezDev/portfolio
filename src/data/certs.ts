@@ -1,4 +1,4 @@
-import { type ICertificate } from "../types/portfolio";
+import { type ICertificate } from "../types";
 
 export const certs: ICertificate[] = [
   {
@@ -49,7 +49,7 @@ export const certs: ICertificate[] = [
     imagen: "https://images.credly.com/images/80d8a06a-c384-42bf-ad36-db81bce5adce/blob",
     obtenido: false
   },
-  
+
   {
     id: 7,
     titulo: "AWS Certified DevOps Engineer – Professional",

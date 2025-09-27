@@ -1,4 +1,4 @@
-import { type IExperience } from "../types/portfolio";
+import { type IExperience } from "../types";
 
 export const experiences: IExperience[] = [
   {
@@ -27,5 +27,5 @@ export const experiences: IExperience[] = [
       "Creación de servicios en Go para procesar transacciones en tiempo real",
     ],
   },
-  
+
 ];
