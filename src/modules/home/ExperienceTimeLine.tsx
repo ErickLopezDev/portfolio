@@ -3,7 +3,7 @@ import { experiences } from "../../data/experiences";
 
 export const ExperienceTimeline: React.FC = () => {
   return (
-    <ol className="relative border-s dark:border-gray-100 border-gray-700">
+    <ol className="relative border-s dark:border-gray-100 border-gray-700 max-w-[700px]">
       {experiences.map((exp) => (
         <li key={exp.id} className="mb-10 ms-4">
           {/* Punto del timeline */}
@@ -15,12 +15,12 @@ export const ExperienceTimeline: React.FC = () => {
           </time>
 
           {/* Título */}
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
             {exp.puesto} - {exp.empresa}
           </h3>
 
           {/* Descripción */}
-          <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+          <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 ">
             {exp.descripcion}
           </p>
 

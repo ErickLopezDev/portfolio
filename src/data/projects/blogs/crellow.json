@@ -1,0 +1,43 @@
+[
+  {
+    "type": "header",
+    "level": 1,
+    "text": "Gestión de tareas colaborativas"
+  },
+  {
+    "type": "paragraph",
+    "text": "Crellow es una aplicación inspirada en Trello que busca optimizar la colaboración en equipos. Permite organizar proyectos en tableros visuales con listas y tarjetas, integrando notificaciones en tiempo real y comentarios. La meta fue lograr un flujo ágil desde el frontend, una API eficiente en el backend y un despliegue sencillo en la nube."
+  },
+  {
+    "type": "header",
+    "level": 2,
+    "text": "Frontend"
+  },
+  {
+    "type": "paragraph",
+    "text": "El frontend se desarrolló con **React + Vite** para lograr una interfaz rápida y modular. Se implementó arrastrar y soltar con librerías como `react-beautiful-dnd` y se priorizó la experiencia de usuario con componentes reutilizables. El estado global se gestionó con **Context API**, permitiendo que los cambios en un tablero se reflejen en tiempo real."
+  },
+  {
+    "type": "header",
+    "level": 2,
+    "text": "Backend"
+  },
+  {
+    "type": "paragraph",
+    "text": "El backend está construido en **Node.js + Express**. Se configuraron endpoints REST para la gestión de usuarios, tableros y tarjetas. Para las notificaciones en tiempo real se usaron **WebSockets**, logrando sincronización instantánea entre los miembros del equipo. La base de datos es **MongoDB Atlas**, elegida por su flexibilidad con documentos y su integración nativa con servicios cloud."
+  },
+  {
+    "type": "header",
+    "level": 2,
+    "text": "Cloud"
+  },
+  {
+    "type": "paragraph",
+    "text": "El despliegue se realizó en **Vercel**, aprovechando su integración continua con GitHub. Cada commit dispara un build automático, asegurando la entrega continua. La base de datos está en **MongoDB Atlas** en la nube, lo que permite escalar el almacenamiento fácilmente sin preocuparse por la infraestructura."
+  },
+  {
+    "type": "image",
+    "src": "https://github.com/Ashlok2003/ShopxIndia/raw/main/docs/architecture.png",
+    "alt": "Dashboard FitFat"
+  }
+]

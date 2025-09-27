@@ -9,4 +9,6 @@ export interface IProject {
   longDescription: string;
   fechaInicio: string; // formato: YYYY-MM-DD
   fechaFin: string; // formato: YYYY-MM-DD
+  github: string;
+  splash: string;
 }
