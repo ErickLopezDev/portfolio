@@ -9,11 +9,6 @@
     "text": "FitFat es una solución para cafeterías que combina dashboard interactivo con analíticas de negocio. El foco del proyecto fue diseñar una arquitectura cloud escalable, con contenedores, CI/CD y monitoreo en tiempo real para la operación diaria de un local."
   },
   {
-    "type": "image",
-    "src": "https://github.com/Ashlok2003/ShopxIndia/raw/main/docs/architecture.png",
-    "alt": "Dashboard FitFat"
-  },
-  {
     "type": "header",
     "level": 2,
     "text": "Infraestructura cloud"
@@ -21,11 +16,17 @@
   {
     "type": "list",
     "items": [
-      "Frontend desplegado en **AWS Amplify**",
-      "Backend en **ECS** con contenedores Docker",
-      "Base de datos **RDS (PostgreSQL)**",
-      "Monitoreo y métricas con **CloudWatch**"
+      "Frontend desplegado en AWS Amplify",
+      "Backend en ECS con contenedores Docker",
+      "Base de datos RDS (PostgreSQL)",
+      "Monitoreo y métricas con CloudWatch"
     ]
+  },
+
+  {
+    "type": "image",
+    "src": "https://github.com/Ashlok2003/ShopxIndia/raw/main/docs/architecture.png",
+    "alt": "Dashboard FitFat"
   },
   {
     "type": "header",

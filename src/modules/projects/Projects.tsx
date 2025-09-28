@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const Projects: React.FC = () => {
   const navigate = useNavigate();
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <div className="max-w-5xl mx-auto sm:px-6 lg:px-8 py-6 px-6">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
         {projects.map((p) => (
           <ProjectCard

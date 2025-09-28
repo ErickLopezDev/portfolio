@@ -16,7 +16,7 @@ export function ProjectCard({ project, onOpen }: Props) {
       <img
         src={project.imagen}
         alt={project.titulo}
-        className="w-full h-64 object-cover"
+        className="w-full h-78 lg:h-64 object-cover"
       />
 
       {/* Overlay */}
@@ -44,7 +44,7 @@ export function ProjectCard({ project, onOpen }: Props) {
         </div>
 
         {/* Botón ver más */}
-        <button className="mt-2 px-4 py-2 bg-white text-black rounded-lg font-semibold flex items-center gap-2 hover:bg-neutral-100 transition">
+        <button className="mt-2 px-4 py-2 bg-white text-black rounded-lg font-semibold flex items-center gap-2 hover:bg-neutral-100 transition cursor-pointer">
           Ver más <ArrowRight className="h-4 w-4" />
         </button>
       </div>

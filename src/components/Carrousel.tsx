@@ -29,24 +29,18 @@ export default function Carrousel() {
   ];
 
   return (
-    <section className="md:px-30 lg:px-80">
-      <h3 className="text-2xl font-bold text-center mb-4">
-        Herramientas
-      </h3>
+    <section className="px-4 max-w-[920px] mx-auto">
+      <h3 className="text-2xl font-bold text-center mb-4">Herramientas</h3>
 
-      <Marquee
-        gradient={false}
-        speed={30}
-        className="text-4xl h-20 "
-      >
+      <Marquee gradient={false} speed={30} className="text-4xl h-20">
         {devSecOpsTools.map((tool, i) => (
           <div key={i} className="mx-6 relative group h-12">
             <span className="text-neutral-600 dark:text-neutral-300">
               {tool.icon}
             </span>
             <div className="absolute hidden group-hover:block bg-neutral-100 text-black text-xs rounded py-2 px-2 -mt-12 ml-5 w-max group-hover:z-40">
-                {tool.name}
-              </div>
+              {tool.name}
+            </div>
           </div>
         ))}
       </Marquee>

@@ -15,6 +15,10 @@ export default function ProjectView() {
   const [blog, setBlog] = useState<any[]>([]);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
+
+  useEffect(() => {
     if (id) {
       import(`../../data/projects/blogs/${id}.json`)
         .then((mod) => setBlog(mod.default))
@@ -26,16 +30,15 @@ export default function ProjectView() {
 
   return (
     <div className="min-h-screen bg-neutral-50 dark:bg-[#0e0e0e] text-black dark:text-white font-sans transition-colors duration-500 overflow-x-hidden relative">
-      <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:18px_24px] pointer-events-none z-0" />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 relative z-10">
         {/* Navegación superior con íconos Lucide ordenados */}
-        <div className="flex flex-wrap gap-3 items-center justify-between mb-8">
+        <div className="flex gap-3 items-center justify-between mb-8 text-sm ">
           <div className="flex gap-2">
             <a
               href={project.github}
               target="_blank"
               rel="noopener"
-              className="flex items-center gap-2 px-4 py-2 bg-black  text-white rounded-lg hover:bg-gray-700 transition font-semibold"
+              className="flex items-center gap-2 px-4 py-2 bg-black  text-white rounded-lg hover:bg-neutral-700 transition font-semibold"
             >
               <FaGithub />
               <span>GitHub</span>
@@ -52,7 +55,7 @@ export default function ProjectView() {
           </div>
           <button
             onClick={() => navigate("/projects")}
-            className="flex items-center gap-2 px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition font-semibold"
+            className="flex items-center gap-2 px-4 py-2 bg-black text-white rounded-lg hover:bg-neutral-800 transition font-semibold cursor-pointer"
           >
             <ArrowLeft size={20} />
             <span>Volver</span>
