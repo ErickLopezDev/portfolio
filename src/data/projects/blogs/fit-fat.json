@@ -16,54 +16,10 @@
   {
     "type": "list",
     "items": [
-      "Frontend desplegado en AWS Amplify",
-      "Backend en ECS con contenedores Docker",
-      "Base de datos RDS (PostgreSQL)",
-      "Monitoreo y métricas con CloudWatch"
+      "Frontend desplegado en Vercel ",
+      "Backend con contenedores Docker",
+      "Base de datos PostgreSQL",
+      "Monitoreo y métricas"
     ]
-  },
-
-  {
-    "type": "image",
-    "src": "https://github.com/Ashlok2003/ShopxIndia/raw/main/docs/architecture.png",
-    "alt": "Dashboard FitFat"
-  },
-  {
-    "type": "header",
-    "level": 2,
-    "text": "Blog técnico"
-  },
-  {
-    "type": "list",
-    "items": [
-      "Orquestación de microservicios con Docker y ECS",
-      "CI/CD con pipelines en AWS CodePipeline",
-      "Monitoreo centralizado con métricas y alarmas en CloudWatch",
-      "Diseño para escalabilidad y alta disponibilidad"
-    ]
-  },
-  {
-    "type": "header",
-    "level": 2,
-    "text": "Instalación y despliegue"
-  },
-  {
-    "type": "code",
-    "language": "bash",
-    "code": "git clone https://github.com/usuario/fitfat\ncd fitfat\ndocker build -t fitfat .\ndocker run -p 3000:3000 fitfat"
-  },
-  {
-    "type": "table",
-    "headers": ["Servicio", "Uso"],
-    "rows": [
-      ["Amplify", "Hosting frontend con integración CI"],
-      ["ECS", "Ejecución de contenedores backend"],
-      ["RDS", "Base de datos escalable"],
-      ["CloudWatch", "Monitoreo de logs y métricas"]
-    ]
-  },
-  {
-    "type": "paragraph",
-    "text": "Próximos pasos: integración de modelos de IA en AWS para predicciones de ventas y optimización de inventario."
   }
 ]

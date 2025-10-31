@@ -9,11 +9,6 @@
     "text": "CSRS Store es un e-commerce especializado en sneakers y streetwear. El reto fue diseñar un frontend atractivo, un backend seguro con lógica de negocio escalable y una infraestructura cloud que soportara catálogos dinámicos, pagos en línea y panel de administración."
   },
   {
-    "type": "image",
-    "src": "https://github.com/Ashlok2003/ShopxIndia/raw/main/docs/architecture.png",
-    "alt": "Dashboard CRSS"
-  },
-  {
     "type": "header",
     "level": 2,
     "text": "Arquitectura e infraestructura"
@@ -21,9 +16,9 @@
   {
     "type": "list",
     "items": [
-      "Frontend en **Next.js** con SSR para SEO",
+      "Frontend en React & TS",
       "Backend en **Node.js + Express** con endpoints REST",
-      "Base de datos **PostgreSQL** gestionada con Supabase",
+      "Base de datos **PostgreSQL**",
       "Despliegue en **Vercel** con pipelines automáticos"
     ]
   },
@@ -37,32 +32,7 @@
     "items": [
       "Catálogo con filtros y búsqueda avanzada",
       "Carrito de compras persistente con sesión",
-      "Pagos seguros integrados con **Stripe**",
       "Panel admin para CRUD de productos y gestión de stock"
     ]
-  },
-  {
-    "type": "header",
-    "level": 2,
-    "text": "Instalación y despliegue"
-  },
-  {
-    "type": "code",
-    "language": "bash",
-    "code": "git clone https://github.com/ErickLopezDev/csrs-store\ncd csrs-store\nnpm install && npm run dev"
-  },
-  {
-    "type": "table",
-    "headers": ["Servicio", "Uso"],
-    "rows": [
-      ["Vercel", "Hosting frontend con SSR"],
-      ["Supabase", "Base de datos PostgreSQL gestionada"],
-      ["Stripe", "Procesamiento de pagos"],
-      ["PostgreSQL", "Gestión de datos relacionales"]
-    ]
-  },
-  {
-    "type": "paragraph",
-    "text": "Próximos pasos: recomendaciones personalizadas mediante IA y sistema de puntos de fidelidad para clientes frecuentes."
   }
 ]

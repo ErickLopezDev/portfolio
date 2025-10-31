@@ -25,19 +25,5 @@
   {
     "type": "paragraph",
     "text": "El backend está construido en Node.js + Express. Se configuraron endpoints REST para la gestión de usuarios, tableros y tarjetas. Para las notificaciones en tiempo real se usaron **WebSockets**, logrando sincronización instantánea entre los miembros del equipo. La base de datos es **MongoDB Atlas**, elegida por su flexibilidad con documentos y su integración nativa con servicios cloud."
-  },
-  {
-    "type": "header",
-    "level": 2,
-    "text": "Cloud"
-  },
-  {
-    "type": "paragraph",
-    "text": "El despliegue se realizó en **Vercel**, aprovechando su integración continua con GitHub. Cada commit dispara un build automático, asegurando la entrega continua. La base de datos está en **MongoDB Atlas** en la nube, lo que permite escalar el almacenamiento fácilmente sin preocuparse por la infraestructura."
-  },
-  {
-    "type": "image",
-    "src": "https://github.com/Ashlok2003/ShopxIndia/raw/main/docs/architecture.png",
-    "alt": "Dashboard FitFat"
   }
 ]
